@@ -6,7 +6,6 @@ php:
 before_script:
 - travis_retry composer self-update
 - travis_retry composer install --no-interaction --prefer-source --dev
-install: php vendor/vendors.php
 
 script:
 - vendor/bin/phpunit --coverage-clover=coverage.xml
